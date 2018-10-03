@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="list.css">
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="search">
+			<input id="inp" type="text" placeholder="请输入用户名">
+			<ul id="seach">
+				<!-- 给li里面创建自定义数据（属性），与原数据里面的all,male,female保持一致 -->
+				<li sex="all" class="active">All</li>
+				<li sex="male">Male</li>
+				<li sex="female">Female</li>
+			</ul>
+		</div>
+		<div class="userlist">
+			<!-- 给ul绑定点击事件，通过事件冒泡获取事件源对象找到li -->
+			<ul id="list">
+				<!-- <li>
+					<img src="1.jpg" alt="">
+					<span class="name">刘小华</span>
+					<span class="des">漂亮的女孩子</span>
+				</li>
+				<li>
+					<img src="1.jpg" alt="">
+					<span class="name">刘小华</span>
+					<span class="des">漂亮的女孩子</span>
+				</li> -->
+			</ul>
+		</div>
+	</div>
+	<script src="list.js"></script>
+	<!-- <script src="index.js"></script> -->
+
+
+</body>
+
+</html>
